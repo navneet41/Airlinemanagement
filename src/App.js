@@ -14,7 +14,7 @@ import viewAdmin from './components/ViewAdmin';
 import CreateAdmin from './components/CreateAdmin';
 import Login from './components/Login';
 import Footer from './components/Footer'; 
-
+import PaymentPage from './components/PaymentPage'
 
 library.add(faTrash,faEdit,faPlus,faList)
 
@@ -26,7 +26,7 @@ function App() {
         <img src="back5.jpg" className="App-logo" alt="logo" />
         <h1>  Jet Airways </h1>
         </header>
-        <div style={{ backgroundImage: "url(/Images/back6.jpg)",
+        <div style={{ backgroundImage: "url(/Images/sky65.jpg)",
                     backgroundRepeat: 'no-repeat',
                     minHeight: '100vh',
                     
@@ -43,7 +43,9 @@ function App() {
         <Route path='/viewAdmin/:id'  component={viewAdmin}></Route>
         <Route path='/addAdmin/:id'  component={CreateAdmin}></Route>
         <Route path='/login'  component={Login}></Route>
-        <Route path='/viewUser/:id'  component={ViewUser}></Route> 
+        <Route path='/viewUser/:id'  component={ViewUser}></Route>
+        <Route path='/payment'  component={PaymentPage}></Route>
+        
 
         </Switch>
            </div>      

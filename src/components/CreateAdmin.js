@@ -115,11 +115,12 @@ export default  class CreateAdmin extends Component{
                                                 value={this.state.to} onChange={this.changeToHandler}/>
                                         </div>
                                         
-
+                                        <div class="card-footer">
  
 
                                         <button className="btn btn-success" onClick={this.saveOrUpdateAdmin}>Save</button>
                                         <button className="btn btn-danger" onClick={this.cancel.bind(this)} style={{marginLeft: "10px"}}>Cancel</button>
+                                        </div>
                                     </form>
                                 </div>
                             </div>

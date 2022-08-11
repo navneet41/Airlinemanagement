@@ -45,7 +45,7 @@ render(){
               <hr></hr>   
              <br></br>
              <div className="row">
-            <table className = "table table-striped  table-dark  ">
+            <table className = "table table-striped  table-dark   ">
                 <thead>
                     <tr>
 

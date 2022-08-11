@@ -20,48 +20,84 @@ export default class ViewProduct extends Component{
 
     render(){
         return(
-            <div>
+            <div className="e-card-image" >
                 <br></br>
-                <div className = "card col-md-6 offset-md-3">
+                <div  className = "card col-md-8 offset-md-3">
                     <h3 className = "text-center">  Flight Details</h3>
                     <div className = "card-body">
-                        <div className = "row">
+                        <div className = "column">
                             <label> Flight Id: </label>
                             <div> { this.state.user.id }</div>
                         </div>
-                        <div className = "row">
-                            <label> Flight Name </label>
+                        <div className = "column">
+                            <label> Flight Name: </label>
                             <div> { this.state.user.name }</div>
                         </div>
-                        <div className = "row">
-                            <label> From </label>
+                        <div className = "column">
+                            <label> From: </label>
                             <div> { this.state.user.from }</div>
                         </div>
-                        <div className = "row">
-                            <label> To </label>
+                        <div className = "column">
+                            <label> To :</label> 
                             <div> { this.state.user.to }</div>
+                            <hr></hr>
+                            <hr></hr>
+                             <br></br>                          
+                            <div>
+                        <div class="card-body-1" >
+                            
+                        <h5 class="card-title">Business Class</h5>
+                    <p class="card-text"> Business price:-Rs25,000<br></br>
+                <hr></hr>
+                <label for="passengerno">Number of passenger</label>
+                <select name="passengerno" id="passengerno">
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    </select>
+                    </p>
 
-
-                           
-            <hr></hr>
-            <br></br>
-            <br></br>
-            <form className="Details">
-
-                <label for ="class"  name="class">Choose a class:</label>
-                <select id="class" name="class">
-                    <option
-                    value="Economy">Economy</option>
-                    <option value="Business">Business</option>
-                </select>
-               <button className=" btn-primary" onClick={this.getUser}> Book Flight</button>
-   </form>
-                        </div>
-                        
+                    <div class="card-footer">
+                    <button className=" btn-primary" onClick={this.getUser}> Book Flight</button>
+                    
                     </div>
-                </div>
-            </div>
+                
+                    </div>
+                    </div>
+                    <br></br>
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    
+                    
+                    <div>
+                        <div class="card-body-2">
+                            <h5 class="card-title">Economy Class</h5>
+                <p class="card-text"> Economy price:-Rs7,000<br></br>
+                <hr></hr>
+                <label for="passengerno">Number of passenger</label>
+                <select name="passengerno" id="passengerno">
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                    </select>
+                    </p>
+                    <div class="card-footer">
+                    <button className=" btn-primary" onClick={this.getUser}> Book Flight</button>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>                   
+                        </div>
+                        </div>
+                    
 
-        );
-    }
-}
+                    );
+                }
+            }

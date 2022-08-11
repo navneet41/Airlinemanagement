@@ -18,7 +18,7 @@ import {
                 <NavLink to='/about'><span style={{fontWeight:'bold'}}>About Us</span></NavLink>
                 <NavLink to='/admin'><span style={{fontWeight:'bold'}}>Admin</span></NavLink>
                 <NavLink to='/user'><span style={{fontWeight:'bold'}}>User</span></NavLink>
-                
+                <NavLink to='/payment'>Payment</NavLink>
                            </NavMenu>
             <NavBtn>
                 <NavBtnLink to='/login'>Login</NavBtnLink>

@@ -12,5 +12,8 @@ const API_URL1=' http://localhost:8085/ims/api/dealers';
 
 
     }
+    paymentDealer(dealer){
+        return axios.post(API_URL1, dealer);
+       }
 }
 export default new Authenticationservice();
